@@ -7,8 +7,7 @@ docker exec -it  my-postgresdb-container bash -c "psql -h localhost -U postgres 
 
 docip=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $cid)
 
-export DIP=$docip
 
 cd ../rates
-docker build -t my_gunicorn_app ./
+docker build -t my_gunicorn_app ./ --build-arg name=$docip
 docker run -d --name my-gunicorn-container -p 3000:3000 my_gunicorn_app

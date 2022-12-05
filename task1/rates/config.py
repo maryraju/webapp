@@ -1,3 +1,5 @@
+import os
+
 DB = {
     "name": "postgres",
     "user": "postgres",
