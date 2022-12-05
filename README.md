@@ -54,6 +54,12 @@ If none of the resources are present, just remove the 'Default' property from th
 
 * Note down the git commit id and repository name. Edit the 'codedeploy_template.yaml' and give those values to 'Commit' and 'Repo' parameter default values.
 
+* If code deployment from git is done for the first time, follow the instruction in the aws doc: https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-partners-github.html
+
+![image](https://user-images.githubusercontent.com/74228590/205670671-7ec0e80e-6824-443d-9004-f6b0879384d4.png)
+
+Click connect to Github and give your credentials and connect to github.
+
 * Now run the below command in aws cli to create a cloudformation stack.
 
 ```
