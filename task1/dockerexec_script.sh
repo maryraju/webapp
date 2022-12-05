@@ -9,5 +9,5 @@ docip=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $cid)
 
 
 cd ../rates
-docker build -t my_gunicorn_app ./ --build-arg name=$docip
+docker build -t my_gunicorn_app ./ --build-arg ip=$docip
 docker run -d --name my-gunicorn-container -p 3000:3000 my_gunicorn_app
