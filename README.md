@@ -43,7 +43,7 @@ To create a user: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_crea
 * AWS CLI(Optional)
 The development environment resources are created in AWS. Hence aws cli is prefered. If not installed, you can use aws console.
 
-### Steps to automate a development environment
+### Steps to automate the development environment
 
 * Go to task1 folder and open the file 'codedeploy_template.yaml'. 
 The file contains the cloudformation template to automate the allocation of an ec2 instance and to use code deploy to copy files from github to the ec2 server.
